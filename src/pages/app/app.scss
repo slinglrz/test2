@@ -1,0 +1,84 @@
+page-app {
+    .background{
+        background: #1a0a3a;
+        color: #ffffff;
+        overflow: hidden;
+    }
+
+    .right{
+        padding-right: 100%;
+    }
+
+    .menu-top{
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 9%;
+    }
+
+    .menu-home{
+        height: 50px;
+        // width: 200px;
+        border-radius: 50px;
+        border-width: 2px;
+        background: #B3B3D7;
+        border-color: #998ead;
+    }
+
+    .menu-home1{
+        height: 50px;
+        // width: 200px;
+        border-radius: 50px;
+        border-width: 2px;
+        background: #AA0078;
+        border-color: #998ead;
+    }
+
+    .circle{
+        height: 50px;
+        width: 50px;
+        background: #ff3e62;
+        border-radius: 50px;
+        margin: 10px;
+    }
+
+    .img{
+        position: absolute;
+        padding-left: 35%;
+        padding-right: 55%;
+        padding-top: 10%;
+    }
+    .top{
+        padding-top:8%;
+
+    }
+    .scroll-content{
+        overflow: hidden !important;
+    }
+    .wave{
+        position: absolute;
+        background: #ff3e62;
+        width: 900px;
+        height: 900px;
+        border-radius: 43%;
+        transform-origin: 50% 48%;
+        animation: drift 9000ms infinite linear;
+        opacity: 0.1;
+        bottom: -145%;
+        left: -110%;
+    }
+
+    .wave.wave1{
+        animation: drift 6000ms infinite linear;
+    }
+
+    .wave.wave2{
+        animation: drift 3000ms infinite linear;
+    }
+
+    @keyframes drift {
+        from {transform: rotate(0deg);}
+        from {transform: rotate(360deg);}
+    }
+   
+    
+}

@@ -1,0 +1,81 @@
+page-about {
+    .background-home{
+        background: #1a0a3a;
+        color: #ffffff;
+    }
+    .left{
+        float:left;
+        padding-left: 5%;
+        color:#998ead;
+
+      }
+      
+    .right{
+        float:right;
+        padding-right: 5%;
+        color:#998ead;
+      }
+
+    .left-circle{
+        height: 50px;
+        width: 50px;
+        background: #ff3e62;
+        border-radius: 50px;
+        float:left;
+        margin: 10px;
+
+        
+    }
+
+    .left-circle-close{
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        float:left;
+        margin: 10px;
+
+    }
+
+    .right-circle{
+        height: 50px;
+        width: 50px;
+        background: #00ccff;
+        border-radius: 50px;
+        float:right;
+        margin: 10px;
+
+        
+    }
+
+    .right-circle-close{
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+        float:right;
+        margin: 10px;
+
+    }
+
+    .center{
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 18%
+    }
+
+    .top{
+        padding-top: 20%;
+        padding-left: 5%;
+    }
+
+    .top2{
+        padding-top: 30%;
+    }
+
+    .top3{
+        padding-top: 5%;
+    }
+
+    .top4{
+        padding-top: 15%;
+    }
+}

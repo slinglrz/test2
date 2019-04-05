@@ -1,0 +1,44 @@
+page-calendar {
+    .top{
+        padding-top: 15%;
+        padding-left: 3%;
+      }
+      .background{
+        background: #1a0a3a;
+        color: #ffffff;
+        overflow: hidden;
+      }
+      .img{
+        position: absolute;
+        padding-left: 35%;
+        padding-right: 55%;
+        padding-top: 70%;
+    }
+    .wave{
+      position: absolute;
+      background: #8573aa;
+      width: 900px;
+      height: 900px;
+      border-radius: 43%;
+      transform-origin: 50% 48%;
+      animation: drift 9000ms infinite linear;
+      opacity: 0.1;
+      bottom: -140%;
+      left: -80%;
+  }
+
+  .wave.wave1{
+      animation: drift 6000ms infinite linear;
+  }
+
+  .wave.wave2{
+      animation: drift 3000ms infinite linear;
+  }
+
+  @keyframes drift {
+      from {transform: rotate(0deg);}
+      from {transform: rotate(360deg);}
+  }
+ 
+  
+}

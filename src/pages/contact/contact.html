@@ -1,0 +1,61 @@
+<!-- <ion-content padding class='background'>
+  <ion-segment [(ngModel)]="gallery">
+    <ion-segment-button value="gallery1">
+      gallery
+    </ion-segment-button>
+    <ion-segment-button value="text">
+      text
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="gallery">
+    <div class='top'>
+      <div class="image" *ngSwitchCase="'gallery1'">
+        <div class="one-image" *ngFor="let item of items | async">
+          <img [src]="'data:image/png;base64,' + item.imageData" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div [ngSwitch]="gallery">
+    <ion-grid *ngSwitchCase="'text'">
+      <ion-card *ngFor="let item of items | async">
+        <ion-item *ngFor="let label of item.results[0].textAnnotations">{{label.description}}</ion-item>
+      </ion-card>
+    </ion-grid>
+  </div>
+  <ion-fab bottom right>
+    <button ion-fab (click)="takePhoto()">
+      <ion-icon name="camera"></ion-icon>
+    </button>
+  </ion-fab>
+  <div class="wave"></div>
+  <div class="wave wave1"></div>
+  <div class="wave wave2"></div>
+</ion-content> -->
+<ion-content padding class="background-home">
+    <div class="top">
+      <h1>Gallery</h1><p></p>
+
+<div class="view view-first">
+    <ion-card *ngFor="let item of items | async">
+        <img [src]="'data:image/png;base64,' + item.imageData" />
+      </ion-card>
+    <div class="mask"></div>
+    <div class="content">
+      <p><ion-card *ngFor="let item of items | async">
+          <ion-item *ngFor="let label of item.results[0].textAnnotations">{{label.description}}</ion-item>
+        </ion-card></p>
+    </div>
+  </div>
+  <ion-fab bottom right>
+      <button ion-fab (click)="takePhoto()">
+        <ion-icon name="camera"></ion-icon>
+      </button>
+    </ion-fab>
+    <div class="wave"></div>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    </div>
+  </ion-content>

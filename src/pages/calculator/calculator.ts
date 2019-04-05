@@ -1,0 +1,35 @@
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CalendarPage } from '../calendar/calendar';
+import { AppPage } from '../app/app';
+/**
+ * Generated class for the CalculatorPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
+@IonicPage()
+@Component({
+  selector: 'page-calculator',
+  templateUrl: 'calculator.html',
+})
+export class CalculatorPage {
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad CalculatorPage');
+  }
+  goAppPage() {
+    this.navCtrl.push(AppPage);
+  }
+  
+
+  goCalendarPage() {
+    this.navCtrl.push(CalendarPage);
+  }
+
+}
